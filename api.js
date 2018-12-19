@@ -14,8 +14,11 @@ app.get('/', (req, res) => {
     res.json({status: 'ok'})
 })
 
+//parte 2
+app.get('/bimbumbam', (req, res) => {
+    const numero = Math.ceil(Math.random()*5)
+    res.json({result: numero})
+})
 
 
 app.listen(PORT, () => console.log('Example app listening on port'+ PORT))
-
-
